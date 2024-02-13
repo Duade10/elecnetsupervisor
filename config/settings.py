@@ -42,8 +42,8 @@ DJANGO_APPS = [
 ]
 CUSTOM_APPS = [
     "core.apps.CoreConfig",
-    "powerstations.apps.PowerstationsConfig",
     "users.apps.UsersConfig",
+    "hourlyreadings.apps.HourlyreadingsConfig",
 ]
 THIRDPARTY_APPS = [
     "debug_toolbar",
