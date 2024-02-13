@@ -32,7 +32,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_supervisor = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
-    station = models.ForeignKey("powerstations.PowerStation", null=True, blank=True, on_delete=models.CASCADE)
     date_joined = models.DateTimeField(auto_now_add=True)
 
     objects = CustomUserManager()
